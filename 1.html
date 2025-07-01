@@ -5,55 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>เว็บไซต์</title>
   <style>
-    
+     body {
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 16px; 
+      }
+
+      .btn-link {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        padding: 16px 32px;
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .btn-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(118, 75, 162, 0.4);
+      }
+      header {
+        background-color: #0a5;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+    nav {
+      background-color: #088;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
     
    
-/* พื้นหลังหน้าเว็บ */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
-  min-height: 100vh;
-}
 
-/* Header */
-header {
-  background-color: #009688;
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 1.2em;
-}
-
-/* ปุ่ม */
-button, .button {
-  display: block;
-  width: fit-content;
-  margin: 10px auto;
-  padding: 12px 20px;
-  background: #673ab7;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 1em;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-/* Hover Effect */
-button:hover, .button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 10px rgba(0,0,0,0.4);
-}
-
-/* หัวข้อ */
-h2 {
-  text-align: center;
-  color: #333;
-  margin-top: 30px;
-}
 
 
   </style>
